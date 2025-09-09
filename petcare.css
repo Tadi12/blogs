@@ -1,0 +1,237 @@
+*{
+margin: 0;
+box-sizing: border-box;
+padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+header{
+background-color: black;
+color: white;
+padding: 20px;
+position: sticky;
+top: 0;
+z-index: 222;
+}
+header h1::after{
+content: "chronicle";
+    font-size: 2em;
+    color: orange;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding:10px;
+}
+li a:hover{
+  background-color: orange;
+  color: black;
+  border-radius: 5px;
+  transition: all 0.5s;
+  padding: 15px ;
+}
+.hero{
+  background-color: #a09e9e;
+    max-width: 100vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.hero h1{
+    font-size: 3.5em;
+    color: #0f0101;
+}
+.hero h1:hover{
+  font-size: 4em;
+  color: darkblue;
+  transition: 0.3s;
+}
+
+.quote{
+  text-align: left;
+  padding: 20px;
+}
+.quote a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px 50px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 20px 25px rgba(11, 1, 1, 0.1);  
+
+}
+.quote a:hover{
+  background-color: #0f0101;
+  color: white;
+  padding: 15px 50px;
+  transition: 0.3s;
+}
+.hero img{
+  padding: 20px;
+    width: 600px;
+    height: 700px;
+    border: 2px hidden black;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+.hero img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.pets{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap:20px;
+}
+.pet img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 20px 25px rgba(11, 1, 1, 0.1);
+   
+}
+.pet img:hover { 
+    transform: scale(1.1);
+    box-shadow: 0px 30px 35px rgba(11, 1, 1, 0.2);
+    transition:  all 0.5s;
+}
+.pet{
+    text-align: center;
+    font-size: 1.2em;
+    color: #0f0101;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(11, 1, 1, 0.1);
+}
+.pet h2:hover{
+    color: orange;
+  font-size: 3rem;
+    transition: 0.5s;
+}
+.content{
+    padding: 30px 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(11, 1, 1, 0.1);
+    margin-bottom: 40px;
+}
+.content h2{
+    font-size: 2em;
+    color: #0f0101;
+    margin-bottom: 20px;
+}
+.content h2:hover{
+  color: orange;
+ font-size: 50px;
+  transition: 0.3s;
+}
+.content a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px 50px;
+    position: relative;
+    top: 5px;
+    left: 300px;
+    border-radius: 8px;
+    box-shadow: 10px 20px 25px rgba(11, 1, 1, 0.1);  
+
+}
+.content a:hover{
+  background-color: #0f0101;
+  color: white;
+  padding: 15px 50px;
+  transition: 0.3s;
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+text-align: center;
+}
+.social a{
+  text-decoration: none;
+ float: right;
+  color: white;
+  padding-right: 10px;
+}
+
+.social a:hover{
+  color: orange;
+  transform: scale(1.1);
+  transition: 0.5s;
+  padding: 0px 20px;
+}
+.contact{
+  margin-bottom: 110px;
+  padding: 20px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+.contact h3{
+  font-size: 25px;
+}
+
+.contact h3:hover{
+  color: orange;
+  font-size: 30px;
+  transition: 0.3s;
+}
+.contact a{
+  text-decoration: none;
+}
+.contact a:hover{
+  color: #a09e9e;
+  font-size: 20px;
+}
+@media (max-width:800px){
+  .hero{
+    flex-wrap: wrap;
+  }
+  .pets{
+    flex-wrap: wrap;
+  }
+  footer{
+    text-align: left;
+  }
+  .content a{
+    left: 20px;
+  }
+  .quote{
+    margin-bottom: 30px;
+  }
+  header h1::after{
+    font-size: 1.5em;
+  }
+}
+
+      
